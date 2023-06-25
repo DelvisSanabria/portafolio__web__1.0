@@ -1,0 +1,43 @@
+@import "./_variables"
+@import "./_mixins"
+
+.header
+  @include orientacion__row__p (row,centered)
+.Navbar
+  @include orientacion__row (row, space-between__end, ajusted, margin__nav)
+  img
+    width: 120px
+    height: 80px
+  .central__logo
+    display: none
+  .menu
+    @include icon__position (row, flex-start)
+    padding-right: 10px
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+  .Navbar
+    .central__logo
+      display: inline-flex
+    .menu
+      padding-right: 5px
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+  .Navbar
+    .central__logo
+      display: inline-flex
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  .Navbar
+    margin: 10px 0 0 0px
+    .central__logo
+      display: inline-flex
+    .menu
+      padding-right: 0
+  
+    
+
+    

@@ -1,0 +1,550 @@
+@import "./_mixins"
+@import "./_variables"
+
+/*Circulo 1 Lenguajes
+
+.animation__container__2
+  @include animation__container__style
+
+.animation__container__2::before
+  @include animation__container__before__style
+
+.animation__container__2:hover::before
+  @include animation__container__hover__before
+
+@keyframes animate
+  @include animation__keyframe
+    
+.animation__container__2::after
+  @include animation__container__after__style
+
+.animation__content__st2
+  @include animation__content__st__style
+  
+.animation__container__2:hover .animation__content__st2 img
+  opacity: 0
+
+.animation__content__st2 h2
+  @include animation__content__h2
+
+.animation__content__st2 span
+  @include animation__content__span
+
+/*circulo 2 Frameworks
+
+.animation__container__3
+  @include animation__container__style
+
+.animation__container__3::before
+  @include animation__container__before__style
+
+.animation__container__3:hover::before
+  @include animation__container__hover__before
+
+@keyframes animate
+  @include animation__keyframe
+    
+.animation__container__3::after
+  @include animation__container__after__style
+
+.animation__content__st3
+  @include animation__content__st__style
+  
+.animation__container__3:hover .animation__content__st3 img
+  opacity: 0
+
+.animation__content__st3 h2
+  @include animation__content__h2
+
+.animation__content__st3 span
+  @include animation__content__span
+
+/* circulo 3 Bases de Datos
+
+.animation__container__4
+  @include animation__container__style
+
+.animation__container__4::before
+  @include animation__container__before__style
+
+.animation__container__4:hover::before
+  @include animation__container__hover__before
+
+@keyframes animate
+  @include animation__keyframe
+    
+.animation__container__4::after
+  @include animation__container__after__style
+
+.animation__content__st4
+  @include animation__content__st__style
+  
+.animation__container__4:hover .animation__content__st4 img
+  opacity: 0
+
+.animation__content__st4 h2
+  @include animation__content__h2
+
+.animation__content__st4 span
+  @include animation__content__span
+
+/* circulo 4 Otras Tecnologias 
+
+.animation__container__5
+  @include animation__container__style
+
+.animation__container__5::before
+  @include animation__container__before__style
+
+.animation__container__5:hover::before
+  @include animation__container__hover__before
+
+@keyframes animate
+  @include animation__keyframe
+    
+.animation__container__5::after
+  @include animation__container__after__style
+
+.animation__content__st5
+  @include animation__content__st__style
+  
+.animation__container__5:hover .animation__content__st5 img
+  opacity: 0
+
+.animation__content__st5 h2
+  @include animation__content__h2
+
+.animation__content__st5 span
+  @include animation__content__span
+
+/* circulo 5 APIs
+
+.animation__container__6
+  @include animation__container__style
+
+.animation__container__6::before
+  @include animation__container__before__style
+
+.animation__container__6:hover::before
+  @include animation__container__hover__before
+
+@keyframes animate
+  @include animation__keyframe
+    
+.animation__container__6::after
+  @include animation__container__after__style
+
+.animation__content__st6
+  @include animation__content__st__style
+  
+.animation__container__6:hover .animation__content__st6 img
+  opacity: 0
+
+.animation__content__st6 h2
+  @include animation__content__h2
+
+.animation__content__st6 span
+  @include animation__content__span
+
+/* circulo 6 Y mucho, mucho mas
+
+.animation__container__7
+  @include animation__container__style
+
+.animation__container__7::before
+  @include animation__container__before__style
+
+.animation__container__7:hover::before
+  @include animation__container__hover__before
+
+@keyframes animate
+  @include animation__keyframe
+    
+.animation__container__7::after
+  @include animation__container__after__style
+
+.animation__content__st7
+  @include animation__content__st__style
+  
+.animation__container__7:hover .animation__content__st6 img
+  opacity: 0
+
+.animation__content__st7 h2
+  @include animation__content__h2
+
+.animation__content__st7 span
+  @include animation__content__span
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+  /*Circulo 1 Lenguajes
+
+  .animation__container__2
+    @include animation__container__style
+
+  .animation__container__2::before
+    @include animation__container__before__style
+
+  .animation__container__2:hover::before
+    @include animation__container__hover__before
+
+  @keyframes animate
+    @include animation__keyframe
+      
+  .animation__container__2::after
+    @include animation__container__after__style
+
+  .animation__content__st2
+    @include animation__content__st__style
+    
+  .animation__container__2:hover .animation__content__st2 img
+    opacity: 0
+
+  .animation__content__st2 h2
+    @include animation__content__h2
+
+  .animation__content__st2 span
+    @include animation__content__span
+
+  /*circulo 2 Frameworks
+
+  .animation__container__3
+    @include animation__container__style
+
+  .animation__container__3::before
+    @include animation__container__before__style
+
+  .animation__container__3:hover::before
+    @include animation__container__hover__before
+
+  @keyframes animate
+    @include animation__keyframe
+      
+  .animation__container__3::after
+    @include animation__container__after__style
+
+  .animation__content__st3
+    @include animation__content__st__style
+    
+  .animation__container__3:hover .animation__content__st3 img
+    opacity: 0
+
+  .animation__content__st3 h2
+    @include animation__content__h2
+
+  .animation__content__st3 span
+    @include animation__content__span
+
+  /* circulo 3 Bases de Datos
+
+  .animation__container__4
+    @include animation__container__style
+
+  .animation__container__4::before
+    @include animation__container__before__style
+
+  .animation__container__4:hover::before
+    @include animation__container__hover__before
+
+  @keyframes animate
+    @include animation__keyframe
+      
+  .animation__container__4::after
+    @include animation__container__after__style
+
+  .animation__content__st4
+    @include animation__content__st__style
+    
+  .animation__container__4:hover .animation__content__st4 img
+    opacity: 0
+
+  .animation__content__st4 h2
+    @include animation__content__h2
+
+  .animation__content__st4 span
+    @include animation__content__span
+
+  /* circulo 4 Otras Tecnologias 
+
+  .animation__container__5
+    @include animation__container__style
+
+  .animation__container__5::before
+    @include animation__container__before__style
+
+  .animation__container__5:hover::before
+    @include animation__container__hover__before
+
+  @keyframes animate
+    @include animation__keyframe
+      
+  .animation__container__5::after
+    @include animation__container__after__style
+
+  .animation__content__st5
+    @include animation__content__st__style
+    
+  .animation__container__5:hover .animation__content__st5 img
+    opacity: 0
+
+  .animation__content__st5 h2
+    @include animation__content__h2
+
+  .animation__content__st5 span
+    @include animation__content__span
+
+  /* circulo 5 Y APIs
+
+  .animation__container__6
+    @include animation__container__style
+
+  .animation__container__6::before
+    @include animation__container__before__style
+
+  .animation__container__6:hover::before
+    @include animation__container__hover__before
+
+  @keyframes animate
+    @include animation__keyframe
+      
+  .animation__container__6::after
+    @include animation__container__after__style
+
+  .animation__content__st6
+    @include animation__content__st__style
+    
+  .animation__container__6:hover .animation__content__st6 img
+    opacity: 0
+
+  .animation__content__st6 h2
+    @include animation__content__h2
+
+  .animation__content__st6 span
+    @include animation__content__span
+
+  /* circulo 6 y mucho mucho mas
+
+  .animation__container__7
+    @include animation__container__style
+
+  .animation__container__7::before
+    @include animation__container__before__style
+
+  .animation__container__7:hover::before
+    @include animation__container__hover__before
+
+  @keyframes animate
+    @include animation__keyframe
+      
+  .animation__container__7::after
+    @include animation__container__after__style
+
+  .animation__content__st7
+    @include animation__content__st__style
+    
+  .animation__container__7:hover .animation__content__st6 img
+    opacity: 0
+
+  .animation__content__st7 h2
+    @include animation__content__h2
+
+  .animation__content__st7 span
+    @include animation__content__span
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+  .container4__grid
+    @include grid__display(grid,column, $amount )
+  
+  .animation__container__2
+    @include animation__container__st2__style
+
+  .animation__container__2::before
+    @include animation__container__st2__style__before
+
+  .animation__container__2:hover::before
+    @include animation__container__st2__style__hover__before
+
+  .animation__content__st2 h2
+    @include animation__content__st__style__h2
+
+  .animation__content__st2 span
+    @include animation__content__st__style__span
+
+  .animation__container__3
+    @include animation__container__st2__style
+  
+  .animation__container__3::before
+    @include animation__container__st2__style__before
+
+  .animation__container__3:hover::before
+    @include animation__container__st2__style__hover__before
+
+  .animation__content__st3 h2
+    @include animation__content__st__style__h2
+
+  .animation__content__st3 span
+    @include animation__content__st__style__span
+  
+  .animation__container__4
+    @include animation__container__st2__style
+
+  .animation__container__4::before
+    @include animation__container__st2__style__before
+
+  .animation__container__4:hover::before
+    @include animation__container__st2__style__hover__before
+
+  .animation__content__st4 h2
+    @include animation__content__st__style__h2
+
+  .animation__content__st4 span
+    @include animation__content__st__style__span
+  
+  .animation__container__5
+    @include animation__container__st2__style
+  
+  .animation__container__5::before
+    @include animation__container__st2__style__before
+
+  .animation__container__5:hover::before
+    @include animation__container__st2__style__hover__before
+
+  .animation__content__st5 h2
+    @include animation__content__st__style__h2
+
+  .animation__content__st5 span
+    @include animation__content__st__style__span
+
+  .animation__container__6
+    @include animation__container__st2__style
+  
+  .animation__container__6::before
+    @include animation__container__st2__style__before
+
+  .animation__container__6:hover::before
+    @include animation__container__st2__style__hover__before
+
+  .animation__content__st6 h2
+    @include animation__content__st__style__h2
+
+  .animation__content__st6 span
+    @include animation__content__st__style__span
+
+  .animation__container__7
+    @include animation__container__st2__style
+  
+  .animation__container__7::before
+    @include animation__container__st2__style__before
+
+  .animation__container__7:hover::before
+    @include animation__container__st2__style__hover__before
+
+  .animation__content__st7 h2
+    @include animation__content__st__style__h2
+
+  .animation__content__st7 span
+    @include animation__content__st__style__span
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  .container4__grid
+    @include grid__display__3 (grid, column, $amount__3)
+    justify-items: center
+
+  .animation__container__2
+    @include animation__container__st3
+
+  .animation__container__2::before
+    @include animation__container__st3__before
+
+  .animation__container__2:hover::before
+    @include animation__container__hover__st3__before
+
+  .animation__content__st2 h2
+    @include animation__content__st3__h2
+
+  .animation__content__st2 span
+    @include animation__content__st3__span
+
+  .animation__container__3
+    @include animation__container__st3
+  
+  .animation__container__3::before
+    @include animation__container__st3__before
+
+  .animation__container__3:hover::before
+    @include animation__container__hover__st3__before
+
+  .animation__content__st3 h2
+    @include animation__content__st3__h2
+
+  .animation__content__st3 span
+    @include animation__content__st3__span
+  
+  .animation__container__4
+    @include animation__container__st3
+
+  .animation__container__4::before
+    @include animation__container__st3__before
+
+  .animation__container__4:hover::before
+    @include animation__container__hover__st3__before
+
+  .animation__content__st4 h2
+    @include animation__content__st3__h2
+
+  .animation__content__st4 span
+    @include animation__content__st3__span
+  
+  .animation__container__5
+    @include animation__container__st3
+  
+  .animation__container__5::before
+    @include animation__container__st3__before
+
+  .animation__container__5:hover::before
+    @include animation__container__hover__st3__before
+
+  .animation__content__st5 h2
+    font-size: 0.9rem
+    text-align: center
+    font-weight: 600
+    letter-spacing: 0.05rem
+    text-transform: uppercase
+
+  .animation__content__st5 span
+    @include animation__content__st3__span
+
+  .animation__container__6
+    @include animation__container__st3
+  
+  .animation__container__6::before
+    @include animation__container__st3__before
+
+  .animation__container__6:hover::before
+    @include animation__container__hover__st3__before
+
+  .animation__content__st6 h2
+    @include animation__content__st3__h2
+
+  .animation__content__st6 span
+    @include animation__content__st3__span
+  
+  .animation__container__7
+    @include animation__container__st3
+
+  .animation__container__7::before
+    @include animation__container__st3__before
+
+  .animation__container__7:hover::before
+    @include animation__container__hover__st3__before
+
+  .animation__content__st7 h2
+    @include animation__content__st3__h2
+
+  .animation__content__st7 span
+    @include animation__content__st3__span
