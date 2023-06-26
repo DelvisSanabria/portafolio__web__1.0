@@ -1,0 +1,56 @@
+@import "./_mixins"
+@import "./_variables"
+
+.card__container
+  @include display(row)
+  @include position (center, center)
+  flex-wrap: wrap
+  width: 400px
+  margin: 10px 0 0 60px
+  .card__box
+    position: relative
+    @include display(row)
+    @include position (center, center)
+    min-width: 300px
+    height: 300px
+    background: transparent
+    box-shadow: inset 5px 5px 5px #021420
+    border-radius: 50%
+    margin: 10px
+    .box
+      width: 270px
+      height: 270px
+      @include display(row)
+      @include position (center, flex-start)
+      position: relative
+      background: #000204c0
+      border: 1px solid #fff
+      border-radius: 50%
+      box-shadow: 0 20px 50px #010b14
+      transition: 0.05s
+
+  .box:hover
+    transform: translateY(-25px)
+    box-shadow: 0 40px 70px #010b14
+
+.content
+  padding: 5px
+  @include display(column)
+  @include position (center, center)
+  img
+    width: 180px
+    height: 150px
+    border-radius: 70px
+  h2
+    text-align: center
+    padding: 10px 0 0 0
+    font-size: 1rem
+    line-height: 1.5rem
+      
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+  .card__container
+    @include display(row)
+    @include position (center, center)
+    width: 90vw
