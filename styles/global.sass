@@ -2,10 +2,27 @@
 @use "./components/_about__container"
 @use "./components/_skills"
 @use "./components/_projets"
+@use "./components/_footer"
 @import "./components/_mixins"
 
 *
   font-family: sans-serif
 body
   @include background (default) 
+
+.container
+  width: 90vw
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+  body
+    width: 94vw
+    overflow-x: hidden
   
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  body
+    width: 96vw
+    .container
+      width: 96vw

@@ -1,0 +1,25 @@
+@import "./_mixins"
+@import "./_variables"
+
+
+.footer__container
+  width: 90vw
+  @include nav__bg
+  @include box__border__bt
+
+.footer__content
+  @include grid__display(grid,rows, $amount)
+  @include position (center, center)
+  .social__media
+    @include display(row)
+    @include position (center, center)
+    padding: 0 10px
+    .icons__space
+      padding: 0 15px
+  .legal
+    @include user__selection__none
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  .footer__container
+    width: 96vw

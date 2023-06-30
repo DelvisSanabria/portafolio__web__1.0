@@ -1,14 +1,19 @@
 @import "./_variables"
+
+/*color background´s
+
+@mixin nav__bg
+  background: #8cb7bd
+
+@mixin linear-gradient__bg__to__bottom($firts__color,$second__color)
+  background: linear-gradient(to bottom center, $firts__color, $second__color)
+
 @mixin background ($text__color)
   @if $text__color == default
     color: #fff
-  background-image: url("../images/background.jpg")
-  background-position: center center
-  background-size: cover
-  width: 95vw
+  width: 90vw
   min-height: 100vh
-  background-repeat: no-repeat
-  background-attachment: fixed
+  padding: 10px
 
 @mixin grid__display($box,$direction, $amount)
   @if $box == grid 
@@ -16,6 +21,8 @@
   @if $box == grid and $direction == column 
     grid-template-columns: $amount 
   @else if $box == grid and $direction == column
+    grid-template-rows: $amount
+  @else if $box == grid and $direction == rows
     grid-template-rows: $amount
 
 @mixin grid__display__3 ($box, $direction, $amount__3)
@@ -80,14 +87,114 @@
     @if $items == flex-start
     align-items: $items
   height: 50px
-/*para la animacion
+
+@mixin box__border
+  border-top-left-radius: 15px
+  border-top-right-radius: 15px
+
+@mixin box__border__tp__bt 
+  border-top-left-radius: 15px
+  border-top-right-radius: 15px
+  border-bottom-left-radius: 15px
+  border-bottom-right-radius: 15px
+    
+@mixin box__border__bt
+  border-bottom-left-radius: 15px
+  border-bottom-right-radius: 15px
+  
+
+/* formatos para textos
+
+@mixin subtitle__style
+  padding: 15px 5px 5px 10px
+  letter-spacing: 0.1rem
+
+@mixin subtitle__style__v2
+  padding: 15px 5px 10px 10px
+  letter-spacing: 0.1rem
+  font-size: 2.1rem
+  
+@mixin par__style
+  padding: 5px 15px 5px 15px
+  line-height: 1.5rem
+  letter-spacing: 0.1rem
+
+@mixin par__style__v2
+  padding: 5px 15px 5px 15px
+  line-height: 1.6rem
+  letter-spacing: 0.2rem
+
+@mixin par__style__large
+  padding: 5px 15px 5px 15px
+  line-height: 1.7rem
+  letter-spacing: 0.2rem
+  font-size: 1.2rem
+  
+@mixin par__style__medium__large
+  padding: 5px 15px 5px 15px
+  line-height: 1.7rem
+  letter-spacing: 0.2rem
+  font-size: 1.3rem
+
+@mixin par__style__medium__large__v2
+  padding: 5px 15px 5px 15px
+  line-height: 1.7rem
+  letter-spacing: 0.2rem
+  font-size: 1.4rem
+
+@mixin user__selection__none
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+
+/*for text animation
+
+@mixin slideInLeft
+  animation: slideInLeft 2s ease-in
+  animation-iteration-count: 1
+  transition: 0.2s
+  @keyframes slideInLeft
+    0%
+      transform: translateX(-800px)
+    100%
+      transform: translateX(0)
+
+@mixin slideInRight
+  animation: slideInRight 2s ease-in 0.3s 1
+  transition: 0.2s
+  @keyframes slideInRight
+    0%
+      transform: translateX(800px)
+    100%
+      transform: translateX(0)
+  
+@mixin slideInLeft__v2
+  animation: slideInLeft 2s ease-in
+  animation-iteration-count: 1
+  transition: 0.2s
+  @keyframes slideInLeft
+    0%
+      transform: translateX(-2000px)
+    100%
+      transform: translateX(0)
+
+@mixin slideInRight__v2
+  animation: slideInRight 2s ease-in 0.3s 1
+  transition: 0.2s
+  @keyframes slideInRight
+    0%
+      transform: translateX(2000px)
+    100%
+      transform: translateX(0)
+
+/*for orbs animation
 
 @mixin animation__container__style
   position: relative
   width: 50vw
   height: 40vh
   border: 1px solid #ccc
-  margin: 10% 0 20% 30%
+  margin: 10% 20% 10% 20%
   background-color: rgba(0, 0, 0, 0.5)
   border-radius: 50%
   overflow: hidden
@@ -154,7 +261,7 @@
   width: 30vw
   height: 55vh
   border: 1px solid #ccc
-  margin: 10% 0 20% 30%
+  margin: 10% 20% 10% 20%
   background-color: rgba(0, 0, 0, 0.5)
   border-radius: 50%
   overflow: hidden
@@ -193,6 +300,7 @@
   background-color: rgba(0, 0, 0, 0.5)
   border-radius: 50%
   overflow: hidden
+  margin: 15px 0 20px 0
 
 @mixin animation__container__st3__before
   content: ''

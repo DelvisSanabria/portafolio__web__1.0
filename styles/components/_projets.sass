@@ -1,12 +1,28 @@
 @import "./_mixins"
 @import "./_variables"
 
+.projets
+  width: 90vw
+  background: #f1f1f1
+  @include box__border
+  .sect__title
+    background: #a5dbce
+    @include box__border
+    @include user__selection__none
+    @include slideInLeft__v2
+    h2
+      @include subtitle__style__v2
+
+  .card__container
+    background: #f1f1f1
+    @include slideInRight__v2
+
 .card__container
   @include display(row)
   @include position (center, center)
   flex-wrap: wrap
   width: 400px
-  margin: 10px 0 0 60px
+  margin: 10px 10 0 10px
   .card__box
     position: relative
     @include display(row)
@@ -54,3 +70,11 @@
     @include display(row)
     @include position (center, center)
     width: 90vw
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  .projets
+    width: 96vw
+    .card__container
+      margin: 0
+      width: 96vw

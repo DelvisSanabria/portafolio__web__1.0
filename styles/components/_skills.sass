@@ -1,6 +1,32 @@
 @import "./_mixins"
 @import "./_variables"
 
+.future__skills__container
+  width: 90vw
+  background: #bfd8d5
+  border-top-left-radius: 15px
+  border-top-right-radius: 15px
+  border-bottom-left-radius: 15px
+  border-bottom-right-radius: 15px
+  
+.text__container__2
+  background: #8cb7bd
+  border-top-left-radius: 15px
+  border-top-right-radius: 15px
+  @include user__selection__none
+  @include slideInLeft__v2
+
+.container4__grid
+  background: #bfd8d5
+  border-bottom-left-radius: 15px
+  border-bottom-right-radius: 15px
+  @include slideInRight__v2
+
+.text__container__2
+  h2
+    @include subtitle__style
+  p
+    @include par__style__v2
 /*Circulo 1 Lenguajes
 
 .animation__container__2
@@ -448,12 +474,31 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px)
+  .future__skills__container
+    margin: 5% 0 5% 0
+    .text__container__2
+      h1 
+        padding: 15px 5px 5px 10px
+        letter-spacing: 0.1rem
+        font-size: 2.4rem
+      p
+      @include par__style__medium__large
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px)
+  .future__skills__container
+    width: 96vw
   .container4__grid
     @include grid__display__3 (grid, column, $amount__3)
     justify-items: center
+
+  .text__container__2
+    h2
+      padding: 15px 5px 5px 10px
+      letter-spacing: 0.1rem
+      font-size: 2.6rem
+    p
+      @include par__style__large
 
   .animation__container__2
     @include animation__container__st3

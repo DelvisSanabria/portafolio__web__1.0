@@ -3,13 +3,13 @@
 
 .header
   @include orientacion__row__p (row,centered)
+  width: 90vw
+  @include nav__bg
+  @include box__border__tp__bt
 .Navbar
   @include orientacion__row (row, space-between__end, ajusted, margin__nav)
   img
-    width: 120px
     height: 80px
-  .central__logo
-    display: none
   .menu
     @include icon__position (row, flex-start)
     padding-right: 10px
@@ -31,8 +31,16 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px)
+  .header
+    @include orientacion__row__p (row,centered)
+    width: 96vw
+    @include box__border
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
   .Navbar
     margin: 10px 0 0 0px
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
     .central__logo
       display: inline-flex
     .menu
